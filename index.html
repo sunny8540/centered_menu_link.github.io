@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header {
+            background-color: #ccc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: row;
+            
+        }
+        .header ul li{
+            list-style: none;
+            display: inline;
+            line-height: 50px;
+            padding: 12px 10px;
+            cursor: pointer;
+            
+        }
+        /* .header ul{ */
+            /* margin: 0px 20px; */
+                /* flex-direction: row; */
+            /* flex: 0.5; */
+                /* } */
+        .three{
+            margin-left:580px ;
+
+        }
+        .two{
+            margin-left:450px ;
+        }
+        .header ul li:hover{
+            transition: 200ms;
+            border-bottom: 3px solid cadetblue;
+            background-color: #ddd;
+
+        }
+        @media screen and (max-width:600px) {
+            .two{
+                margin-left: 0px;
+
+            }
+            .three{
+                margin-left: 0px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="one">
+            <ul>
+                <li>News</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="two">
+            <ul>
+                <li>home</li>
+            </ul>
+        </div>
+        <div class="three">
+            <ul>
+                <li>Search</li>
+                <li>About</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
